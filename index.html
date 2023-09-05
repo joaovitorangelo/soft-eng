@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>SoftwareEng</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="head">
+            <h1>SoftwareEng</h1>
+        </div>
+
+        <div class="navbar">
+            <a class="link" href="">Início</a>
+            <a class="link" href="">Módulos</a>
+            <!--
+            <a class="link" href="#">Questões</a>
+            -->
+        </div>
+
+        <!--search-bar-->
+
+        <div class="search-bar">
+            <form class="form">
+                <button>
+                    <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <input class="input" placeholder="Pesquisar" required="" type="text">
+                <button class="reset" type="reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </form>
+            </div>
+    
+    </header>
+
+    <!---->
+
+    <div class="title">
+        <h1>Questões de Engenharia de Software</h1>
+    </div>
+
+    <div id="pergunta1" class="pergunta">
+        <h2>O conceito subentendido na subclassificação de interessados físicos ou jurídicos é o de?</h2>
+        <div class="baby">
+        <input type="radio" name="quest" onclick="wrong1('Você errou! A resposta correta é d).')"></input>
+        <label for="pergunta1">a) Domínio</label><br>
+        <input type="radio" name="quest" onclick="wrong1('Você errou! A resposta correta é d).')"></input>
+        <label for="pergunta1">b) Agregação</label><br>
+        <input type="radio" name="quest" onclick="wrong1('Você errou! A resposta correta é d).')"></input>
+        <label for="pergunta1">c) Encapsulamento</label><br>
+        <input type="radio" name="quest" onclick="correct1('Parabéns! Você acertou a questão.')"></input>
+        <label for="pergunta1">d) Herança</label><br>
+        <div class="txtbtn" id="resposta1"></div>
+        <input class="revelar" type="button" value="Revelar questão" onclick="correct1('A resposta correta é d).')"></input>
+        </div>
+    </div>
+    
+<!---->
+
+    <div id="pergunta2" class="pergunta">
+        <h2>Visando obter maior independência funcional, é adequado que o esforço seja direcionado ao projeto de módulos?</h2>
+        <div class="baby">
+        <input type="radio" name="quest" onclick="wrong2('Você errou! A resposta correta é c).')"></input>
+        <label for="pergunta2">a) Que não usem estruturas de seleção</label><br>
+        <input type="radio" name="quest" onclick="wrong2('Você errou! A resposta correta é c).')"></input>
+        <label for="pergunta2">b) Que não usem estruturas de repetição</label><br>
+        <input type="radio" name="quest" onclick="correct2('Parabéns! Você acertou a questão.')"></input>
+        <label for="pergunta2">c) Cujas tarefas tenham elevada coesão</label><br>
+        <input type="radio" name="quest" onclick="wrong2('Você errou! A resposta correta é c).')"></input>
+        <label for="pergunta2">d) Cujas tarefas tenham coesão lógica</label><br>
+        <div class="txtbtn" id="resposta2"></div>
+        <input class="revelar" type="button" value="Revelar questão" onclick="correct2('A resposta correta é c).')"></input>
+        </div>
+    </div>
+
+<!---->
+
+    <div id="pergunta3" class="pergunta">
+        <h2>Em reunião, toda conversação é restringida às respostas dos elementos às perguntas colocadas pelo Scrum Master, sendo uma delas: "O que planeja desenvolver até a próxima reunião?" As Scrum meetings ocorrem?</h2>
+        <div class="baby">
+        <input type="radio" name="quest" onclick="correct3('Parabéns! Você acertou a questão.')"></input>
+        <label for="pergunta3">a) Diariamente</label><br>
+        <input type="radio" name="quest" onclick="wrong3('Você errou! A resposta correta é a).')"></input>
+        <label for="pergunta3">b) Duas vezes por semana</label><br>
+        <input type="radio" name="quest" onclick="wrong3('Você errou! A resposta correta é a).')"></input>
+        <label for="pergunta3">c) Uma vez por semana</label><br>
+        <input type="radio" name="quest" onclick="wrong3('Você errou! A resposta correta é a).')"></input>
+        <label for="pergunta3">d) Sempre que necessário</label><br>
+        <div class="txtbtn" id="resposta3"></div>
+        <input class="revelar" type="button" value="Revelar questão" onclick="correct3('A resposta correta é a).')"></input>
+        </div>   
+    </div>
+
+</body>
+
+</html>
